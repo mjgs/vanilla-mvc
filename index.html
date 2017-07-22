@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+  <div id="listOfPenguins" class="list-of-penguins"></div>
+  <script src="./js/namespace.js"></script>
+  <script src="./js/models/Penguin.js"></script>
+  <script src="./js/views/Penguin.js"></script>
+  <script src="./js/controllers/Penguin.js"></script>
+  <script>
+    /*
+     * Re-implementation of tutorial to use modules:
+     * https://www.sitepoint.com/mvc-design-pattern-javascript
+     */
+    var targetElement = document.getElementById('listOfPenguins');
+    var penguinModel = new Penguin.model(XMLHttpRequest);
+    var penguinView = new Penguin.view(targetElement);
+    var controller = new Penguin.controller(penguinView, penguinModel);
+
+    controller.initialize();
+    controller.onClickGetPenguin({
+      currentTarget: {
+        dataset: {
+          penguinIndex: 0
+        }
+      }
+    });
+  </script>
+</body>
+</html>

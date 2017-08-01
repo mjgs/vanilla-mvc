@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Example 2: MVC + Events + Elements</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <form>
+    First name:
+    <input type="text" name="firstname" value="Mickey">
+    Last name:
+    <input type="text" name="lastname" value="Mouse">
+    <input id="submit" type="submit" value="Submit">
+  </form>
+  <div id="display">
+    <h1>Full Name:</h1>
+  </div>
+  <p>If you click the "Submit" button, the form-data will be saved to local storage and displayed in the page.".</p>
+  
+  <script src="js/namespace.js"></script>
+  <script src="js/models.js"></script>
+  <script src="js/views.js"></script>
+  <script src="js/controllers.js"></script>
+  <script src="js/elements.js"></script>
+  <script src="js/events.js"></script>
+  
+  <script>
+    app.events.name(app.elements.name.submitButton);
+  </script>
+</body>
+</html>

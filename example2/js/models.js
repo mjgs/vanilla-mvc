@@ -1,6 +1,6 @@
 app.models = (function() {
   const models = {
-    name: {
+    fullname: {
       firstname: function(name) {
         (name) ? localStorage.setItem('firstname', name) : null;
         return localStorage.getItem('firstname');

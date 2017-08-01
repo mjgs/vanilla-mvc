@@ -1,9 +1,9 @@
 app.views = (function() {
   const views = {
-    name: {
+    fullname: {
       render: function($el) {
-        const firstname = app.models.name.firstname();
-        const lastname = app.models.name.lastname();
+        const firstname = app.models.fullname.firstname();
+        const lastname = app.models.fullname.lastname();
         const fullname = document.createTextNode(`${firstname} ${lastname}`);
         $el.appendChild(fullname);
       }

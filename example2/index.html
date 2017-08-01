@@ -19,15 +19,15 @@
   <p>If you click the "Submit" button, the form-data will be saved to local storage and displayed in the page.".</p>
   
   <script src="js/namespace.js"></script>
-  <script src="js/models.js"></script>
-  <script src="js/views.js"></script>
-  <script src="js/controllers.js"></script>
-  <script src="js/elements.js"></script>
-  <script src="js/events.js"></script>
+  <script src="js/models/fullname.js"></script>
+  <script src="js/views/fullname.js"></script>
+  <script src="js/elements/fullname.js"></script>
+  <script src="js/controllers/fullname.js"></script>
+  <script src="js/events/fullname.js"></script>
   
   <script>
-    const button = app.elements.fullname.submitButton;
-    app.events.fullname(button);
+    const elements = app.elements.fullname;
+    app.events.fullname(elements.submitButton);
   </script>
 </body>
 </html>

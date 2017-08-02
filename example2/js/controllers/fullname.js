@@ -9,4 +9,4 @@ app.controllers.fullname = (function(model, view, elements) {
   };
 
   return controller;
-})(app.models.fullname, app.views.fullname, app.elements.fullname);
+})(app.models.user, app.views.fullname, app.elements.fullname);

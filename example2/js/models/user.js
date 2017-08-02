@@ -1,4 +1,4 @@
-app.models.fullname = (function() {
+app.models.user = (function() {
   const model = {
     firstname: function(name) {
       (name) ? localStorage.setItem('firstname', name) : null;

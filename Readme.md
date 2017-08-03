@@ -5,4 +5,7 @@
 tutorial to use modules.
 
 2. Example 2: MVC + Events + Elements - using w3schools
-   [HTML Form Example](w3schools)
+   [HTML Form Example](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_form_submit)
+
+3. Example 3: View-Model inspired by
+   [Todo MVC vanillajs](http://todomvc.com/examples/vanillajs)

@@ -62,7 +62,7 @@
     else {
       // Generate an ID
       updateData.id = new Date().getTime();
-      updateData.type = 'user';
+      updateData.type = 'user'; // Some refactoring needed to make other thing types possible
       things.push(updateData);
       localStorage[this._dbName] = JSON.stringify(data);
       callback.call(this, updateData);
